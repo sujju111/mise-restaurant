@@ -94,7 +94,7 @@ test("guest request goes to staff approval; menu changes persist per owner", asy
       .isVisible()
   )
     await page
-      .getByRole("button", { name: "Close navigation", exact: true })
+      .getByRole("button", { name: "Menu studio", exact: true })
       .click();
   await expect(
     page.getByRole("heading", { name: "Jhol momo", exact: true }),
