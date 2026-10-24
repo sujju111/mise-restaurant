@@ -57,6 +57,9 @@ test("guest request goes to staff approval; menu changes persist per owner", asy
   await page
     .getByRole("button", { name: "Save & publish dish", exact: true })
     .click();
+  await expect(
+    page.getByRole("heading", { name: "Juniper special momo", exact: true }),
+  ).toBeVisible();
   await page.reload();
   await page.getByRole("button", { name: "Guest menu", exact: true }).waitFor();
   if (
@@ -81,7 +84,7 @@ test("guest request goes to staff approval; menu changes persist per owner", asy
       .click();
   await page
     .getByRole("combobox", { name: "Restaurant workspace", exact: true })
-    .click();
+    .press("Enter");
   await page
     .getByRole("option", { name: "Ember Kitchen", exact: true })
     .click();

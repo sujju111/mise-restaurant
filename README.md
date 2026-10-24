@@ -6,6 +6,8 @@ A thoughtful restaurant workspace built with **Vue 3 + Vuetify, Rust, SQLite and
 
 ## Web demo on GitHub Pages
 
+[Open the live Mise demo](https://sujju111.github.io/mise-restaurant/).
+
 The Pages workflow publishes the browser-local demo. Every visitor gets their own local workspace; it does not host the Rust API or synchronize different devices. Use the included API when you later connect shared restaurant service.
 
 ## Try it
